@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+    <link rel="stylesheet" href="stylessheet.css"> </link>
+</head>
+<body>
+<div id="container">
+  <h1>Counter</h1>
+  <div id= "number">
+    0
+  </div>
+  <div id="buttons">
+    <button id="increase">+</button>
+    <button id ="decrease">-</button>
+  </div>
+</div>
+
+    <script>
+        let add = document.getElementById("increase");
+        let minus = document.getElementById("decrease");
+        let currentCount = document.getElementById("number");
+        let int = 0;
+
+        add.addEventListener("click", function(){
+        int += 1;
+        currentCount.innerHTML = int;
+        })
+
+        minus.addEventListener("click", function(){
+        int -= 1;
+        currentCount.innerHTML = int;
+        })
+    </script>
+</body>
+</html>

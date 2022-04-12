@@ -1,0 +1,10 @@
+#container {
+    margin : 100px;
+  }
+  #number {
+    margin: 50px;
+    font-size: 50px;
+  }
+  #buttons{
+    margin-left: 25px;
+  }
